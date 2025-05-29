@@ -1,0 +1,19 @@
+HOW TO ADD YOUR PROFILE PICTURE:
+
+1. Take the image you shared with me (the one where you're wearing an orange shirt)
+
+2. Rename the image file to "profile.jpg" 
+
+3. Copy this renamed image to EXACTLY this location:
+   C:\Users\sinha\OneDrive\Desktop\gdg\portfolio\public\profile.jpg
+   (This will replace the placeholder file we created)
+
+4. Make sure the path is correct - the image should be directly in the "public" folder, NOT in the "images" subfolder.
+
+5. Restart your development server by:
+   - Stopping the current server (with Ctrl+C)
+   - Running "npm start" again
+
+6. Your profile picture should now appear in the circular frame on your website.
+
+NOTE: If you still face issues, try clearing your browser cache or opening the site in a private/incognito window.
