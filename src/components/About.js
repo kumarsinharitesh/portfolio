@@ -50,7 +50,7 @@ const About = () => {
             <div className="position-item">
               <div className="position-header">
                 <h4>Core Member</h4>
-                <span className="period">Sept 2024 - Present</span>
+                <span className="period">Sept 2024 - July 2025</span>
               </div>
               <p className="organization">Google Developer Groups</p>
               <ul>
@@ -74,7 +74,7 @@ const About = () => {
             <div className="position-item">
               <div className="position-header">
                 <h4>Organizing Team</h4>
-                <span className="period">Oct 2023 - Present</span>
+                <span className="period">Oct 2023 - July 2025</span>
               </div>
               <p className="organization">NSS</p>
               <ul>
