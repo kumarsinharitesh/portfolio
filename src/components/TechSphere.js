@@ -23,7 +23,6 @@ const TechSphere = () => {
     { Icon: FaHtml5, color: '#E34F26', name: 'HTML5' },
     { Icon: FaCss3Alt, color: '#1572B6', name: 'CSS3' },
     { Icon: FaNodeJs, color: '#83CD29', name: 'Node.js' },
-    { Icon: SiExpress, color: '#FFFFFF', name: 'Express' },
     { Icon: SiMongodb, color: '#4DB33D', name: 'MongoDB' },
     { Icon: FaDatabase, color: '#00A1E0', name: 'SQL' },
     { Icon: FaGitAlt, color: '#F05032', name: 'Git' },
