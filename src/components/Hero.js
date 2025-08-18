@@ -120,7 +120,7 @@ const Hero = () => {
               transition={{ duration: 0.5, delay: 0.3 }}
             >
               <img
-                src="https://media.licdn.com/dms/image/v2/D5603AQHPkYBt7ejOKA/profile-displayphoto-shrink_400_400/B56ZcBkbktHgAg-/0/1748078018413?e=1754524800&v=beta&t=vCBjBxLrc7NAOnnd-D0tZpOCt-u15Ib31ZTsX6eeOwQ"
+                src="https://media.licdn.com/dms/image/v2/D5635AQHtVfhCQrQzyQ/profile-framedphoto-shrink_400_400/B56Zcs6D9sHgAk-/0/1748805108208?e=1756112400&v=beta&t=s4XGFuvdlD28SWzuLySQhfVpF1aSSikUwwD5mQEIi20"
                 alt="Ritesh Kumar Sinha"
                 className="profile-img"
                 onError={(e) => {
