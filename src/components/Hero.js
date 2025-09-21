@@ -120,7 +120,7 @@ const Hero = () => {
               transition={{ duration: 0.5, delay: 0.3 }}
             >
               <img
-                src="https://media.licdn.com/dms/image/v2/D5635AQHtVfhCQrQzyQ/profile-framedphoto-shrink_400_400/B56Zcs6D9sHgAk-/0/1748805108208?e=1759093200&v=beta&t=i7Hb7y5SYb8OJXjmtX-1LRIIDGxnSqZ3eK5MU6uDZV0"
+                src="https://instagram.fdel25-2.fna.fbcdn.net/v/t51.2885-19/500777858_18346916089157002_7792877758966306305_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=instagram.fdel25-2.fna.fbcdn.net&_nc_cat=110&_nc_oc=Q6cZ2QFxE0IeLZnqINhej6WPyxlki3YTBUPxuFsmFNRbFI2UIg7qfFDywX_RXtRiWTt19kys7c4UTjl5i534SgegPy7d&_nc_ohc=2_zidx-PNsgQ7kNvwF-tmtZ&_nc_gid=Rmx1LcqOvT5I8ngpFHtq7w&edm=ALGbJPMBAAAA&ccb=7-5&oh=00_AfbAJU0luI6U53Fq3Rwk7knOsh5WhJJU0amXkRp-L9r4vg&oe=68D65044&_nc_sid=7d3ac5"
                 alt="Ritesh Kumar Sinha"
                 className="profile-img"
                 onError={(e) => {
