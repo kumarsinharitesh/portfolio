@@ -13,6 +13,7 @@ const About = () => {
           className="about-content"
         >
           <h2>About Me</h2>
+
           <motion.div
             className="about-text"
             initial={{ opacity: 0, x: -20 }}
@@ -38,6 +39,7 @@ const About = () => {
             </p>
           </motion.div>
 
+          {/* Work Experience Section */}
           <motion.div
             className="experience-section"
             initial={{ opacity: 0, y: 30 }}
@@ -45,44 +47,50 @@ const About = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <h3>Positions and Responsibilities</h3>
-            
+            <h3>Work Experience</h3>
+
             <div className="position-item">
               <div className="position-header">
-                <h4>Core Member</h4>
-                <span className="period">Sept 2024 - July 2025</span>
+                <h4>Information Technology Intern</h4>
+                <span className="period">Oct 2025 - Dec 2025</span>
               </div>
-              <p className="organization">Google Developer Groups</p>
+              <p className="organization">
+                Food Safety and Standards Authority of India (FSSAI)
+              </p>
               <ul>
-                <li>Video Editing & Designing: Creating visual content for events and social media</li>
-                <li>Working on Tech projects and Event Organizing</li>
-              </ul>
-            </div>
-            
-            <div className="position-item">
-              <div className="position-header">
-                <h4>Programming Member</h4>
-                <span className="period">Oct 2024 - Present</span>
-              </div>
-              <p className="organization">Hackhound</p>
-              <ul>
-                <li>Learning Data Structures & Algorithms with C++</li>
-                <li>Enhancing problem-solving skills and solving DSA Problems</li>
+                <li>Managed and maintained databases using Excel and PostgreSQL</li>
+                <li>Assisted in web development using HTML, CSS, JavaScript, and React</li>
               </ul>
             </div>
 
             <div className="position-item">
               <div className="position-header">
-                <h4>Organizing Team</h4>
-                <span className="period">Oct 2023 - July 2025</span>
+                <h4>Conversational Data Analyst Intern</h4>
+                <span className="period">Sept 2025 - Oct 2025</span>
               </div>
-              <p className="organization">NSS</p>
+              <p className="organization">
+                VOIS & VI (Edunet Foundation – AICTE)
+              </p>
               <ul>
-                <li>Event Organization & Management, Leadership & Teamwork</li>
+                <li>Analyzed conversational datasets to derive meaningful insights</li>
+                <li>Built LLM-based analytical solutions for conversational data</li>
+              </ul>
+            </div>
+
+            <div className="position-item">
+              <div className="position-header">
+                <h4>SDE Intern</h4>
+                <span className="period">Aug 2025 - Sept 2025</span>
+              </div>
+              <p className="organization">Bluestock</p>
+              <ul>
+                <li>Performed database operations using PostgreSQL</li>
+                <li>Contributed to front-end development using HTML, CSS, and JavaScript</li>
               </ul>
             </div>
           </motion.div>
 
+          {/* Extra-Curricular Section (unchanged) */}
           <motion.div
             className="extracurricular-section"
             initial={{ opacity: 0, y: 30 }}
@@ -103,4 +111,4 @@ const About = () => {
   );
 };
 
-export default About; 
+export default About;
