@@ -17,6 +17,7 @@ const Skills = () => {
       { name: 'CSS3', category: 'frontend', level: 85, icon: '🎨' },
       { name: 'Node.js', category: 'backend', level: 80, icon: '🟢' },
       { name: 'MongoDB', category: 'backend', level: 70, icon: '🍃' },
+      { name: 'PostgreSQL', category: 'backend', level: 75, icon: '🐘'},
       { name: 'Python', category: 'backend', level: 75, icon: '🐍' },
       { name: 'C++', category: 'backend', level: 70, icon: '💻' },
       { name: 'SQL', category: 'backend', level: 65, icon: '🗄️' },
