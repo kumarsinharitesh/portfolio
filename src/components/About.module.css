@@ -1,0 +1,103 @@
+.about { overflow: hidden; }
+.orb { width: 400px; height: 400px; top: 10%; right: -100px; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 28px;
+  margin-top: 48px;
+  align-items: start;
+}
+
+/* Bio Card */
+.bioCard {
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.bioText {
+  font-size: 0.97rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+.bioText strong { color: var(--text-primary); }
+.highlight {
+  color: var(--accent-cyan);
+  font-weight: 600;
+}
+
+.education {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 20px;
+  background: rgba(6, 182, 212, 0.04);
+  border: 1px solid rgba(6, 182, 212, 0.12);
+  border-radius: var(--radius-sm);
+  margin-top: 8px;
+}
+.eduIcon {
+  width: 40px; height: 40px;
+  border-radius: 10px;
+  background: rgba(6, 182, 212, 0.1);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--accent-cyan);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+.education h4 {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+.education p {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+}
+.eduMeta { display: flex; gap: 8px; flex-wrap: wrap; }
+
+/* Stats */
+.statsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.statCard {
+  padding: 28px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  cursor: default;
+}
+.statIcon {
+  width: 48px; height: 48px;
+  border-radius: 14px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.25rem;
+}
+.statValue {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  font-weight: 900;
+  line-height: 1;
+}
+.statLabel {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  text-align: center;
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .grid { grid-template-columns: 1fr; }
+  .statsGrid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 480px) {
+  .bioCard { padding: 24px; }
+}

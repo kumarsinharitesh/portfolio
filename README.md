@@ -1,73 +1,36 @@
-# Portfolio Website
-
-A modern, responsive portfolio website with a cosmic theme built using React and Framer Motion.
-
-## Features
-
-- Responsive design
-- Cosmic theme with animated background
-- Interactive components
-- Smooth animations
-- Contact form
-- Skills showcase
-- Experience timeline
-
-## Technologies Used
-
-- React
-- Framer Motion
-- React Icons
-- CSS3
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 
-### Prerequisites
+First, run the development server:
 
-- Node.js (v14 or higher)
-- npm (v6 or higher)
-
-### Installation
-
-1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/portfolio.git
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-2. Navigate to the project directory:
-```bash
-cd portfolio
-```
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-3. Install dependencies:
-```bash
-npm install
-```
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-4. Start the development server:
-```bash
-npm start
-```
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-The application will open in your default browser at `http://localhost:3000`.
+## Learn More
 
-## Customization
+To learn more about Next.js, take a look at the following resources:
 
-1. Update personal information in the respective components
-2. Modify the cosmic theme colors in the CSS files
-3. Add or remove sections as needed
-4. Update social media links
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## Deployment
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-The project can be deployed to any static site hosting service like:
-- Vercel
-- Netlify
-- GitHub Pages
+## Deploy on Vercel
 
-## License
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-This project is licensed under the MIT License.
-
-## Contact
-
-Kumar Sinha Ritesh - [LinkedIn](https://www.linkedin.com/in/kumarsinharitesh) 
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

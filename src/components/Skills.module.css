@@ -1,0 +1,138 @@
+.skills {
+  overflow: hidden;
+  padding-bottom: 80px;
+}
+.orb { width: 350px; height: 350px; top: 20%; left: -80px; }
+
+/* ─── Filter Tabs ─── */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 36px;
+  margin-bottom: 44px;
+}
+.filterBtn {
+  padding: 7px 20px;
+  border-radius: 50px;
+  border: 1px solid var(--glass-border);
+  background: var(--glass);
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  backdrop-filter: blur(10px);
+}
+.filterBtn:hover {
+  color: var(--text-primary);
+  border-color: rgba(6, 182, 212, 0.4);
+}
+.filterActive {
+  background: linear-gradient(135deg, rgba(6,182,212,0.2), rgba(139,92,246,0.2)) !important;
+  border-color: rgba(6,182,212,0.6) !important;
+  color: var(--accent-cyan) !important;
+  box-shadow: 0 0 14px rgba(6,182,212,0.2);
+}
+
+/* ─── Ticker Wrapper — full-width ─── */
+.tickerWrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 12px 0;
+}
+
+/* Fade masks on left and right edges */
+.fadeLeft,
+.fadeRight {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 120px;
+  z-index: 2;
+  pointer-events: none;
+}
+.fadeLeft {
+  left: 0;
+  background: linear-gradient(90deg, var(--bg-primary) 0%, transparent 100%);
+}
+.fadeRight {
+  right: 0;
+  background: linear-gradient(270deg, var(--bg-primary) 0%, transparent 100%);
+}
+
+/* ─── Scrolling track ─── */
+.ticker {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: max-content;
+  animation: ticker-scroll linear infinite;
+  will-change: transform;
+}
+.ticker:hover {
+  animation-play-state: paused;
+}
+
+@keyframes ticker-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ─── Individual pill ─── */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  background: var(--glass);
+  backdrop-filter: blur(14px);
+  border: 1px solid var(--glass-border);
+  border-radius: 50px;
+  cursor: default;
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+  flex-shrink: 0;
+}
+
+.pill::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: color-mix(in srgb, var(--skill-color) 8%, transparent);
+  opacity: 0;
+  border-radius: inherit;
+  transition: opacity 0.25s;
+}
+.pill:hover::before { opacity: 1; }
+
+.pill:hover {
+  border-color: color-mix(in srgb, var(--skill-color) 55%, transparent);
+  box-shadow: 0 4px 20px color-mix(in srgb, var(--skill-color) 22%, transparent);
+  transform: translateY(-3px) scale(1.04);
+}
+
+/* ─── Icon + name ─── */
+.icon {
+  font-size: 1.35rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.name {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .icon { font-size: 1.15rem; }
+  .name { font-size: 0.82rem; }
+  .pill { padding: 8px 16px; }
+}
