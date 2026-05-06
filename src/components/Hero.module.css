@@ -85,7 +85,7 @@
   gap: 10px;
   min-height: 32px;
 }
-.codeIcon { color: var(--accent-violet); font-size: 1.1rem; flex-shrink: 0; }
+.codeIcon { color: var(--accent-violet); font-size: 1.6rem; flex-shrink: 0; }
 .role {
   font-family: var(--font-mono);
   font-size: 1.05rem;
