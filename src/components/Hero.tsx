@@ -71,7 +71,7 @@ export default function Hero() {
             transition={{ duration: 0.6 }}
           >
             <FaTerminal size={11} color="var(--accent-cyan)" />
-            <span>Open to SDE Roles & Open Source</span>
+            <span>Open to Work & Open Source Contributions</span>
           </motion.div>
 
           <motion.h1
@@ -93,7 +93,7 @@ export default function Hero() {
           >
             <HiOutlineCode className={styles.codeIcon} />
             <span className={styles.role} style={{ fontSize: '1.05rem', opacity: 0.9 }}>
-              Tech Enthusiast | Aspiring Full Stack Engineer | Developer Mindset & Continuous Learning
+              Tech Enthusiast | Aspiring Full Stack Engineer | Continuous Learning | AI/ML Enthusiast
             </span>
           </motion.div>
 
