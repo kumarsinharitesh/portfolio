@@ -27,13 +27,6 @@ const socials = [
     href: 'mailto:sinha.raju.rk@gmail.com',
     color: '#06b6d4',
   },
-  {
-    iconType: 'phone',
-    label: 'Phone',
-    sub: '+91 9835858465',
-    href: 'tel:+919835858465',
-    color: '#10b981',
-  },
 ]
 
 function SocialIcon({ type }: { type: string }) {

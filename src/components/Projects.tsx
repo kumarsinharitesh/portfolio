@@ -13,7 +13,7 @@ const projects = [
     highlight: '60% effort reduction in code capture via pgvector semantic search',
     tags: ['Next.js 15', 'tRPC', 'PostgreSQL', 'pgvector', 'OpenAI', 'Gemini', 'AssemblyAI'],
     github: 'https://github.com/kumarsinharitesh',
-    live: 'https://devsync-ai.vercel.app',
+    live: 'https://devsynchub.vercel.app',
     color: '#06b6d4',
     featured: true,
   },

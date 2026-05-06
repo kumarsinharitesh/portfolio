@@ -8,7 +8,7 @@ const experiences = [
     role: 'Information Technology Intern',
     company: 'Food Safety and Standards Authority of India (FSSAI)',
     period: 'Oct 2025 – Dec 2025',
-    type: 'Government',
+    type: 'Internship',
     color: '#10b981',
     points: [
       'Optimized PostgreSQL relational databases for regulatory data management across multiple government record systems',

@@ -6,7 +6,7 @@ import styles from './Leadership.module.css'
 
 const roles = [
   {
-    title: 'AIML Lead',
+    title: 'Ex AIML Co-lead',
     org: 'Google Developer Groups (GDG)',
     period: '2024 – Present',
     icon: <FaMicrophone />,
@@ -14,7 +14,7 @@ const roles = [
     desc: 'Led AI/ML sessions, content design, and technical community events on campus',
   },
   {
-    title: 'Web Dev Co-lead',
+    title: 'Core Member',
     org: 'Hackhound',
     period: '2024 – Present',
     icon: <FaCode />,
