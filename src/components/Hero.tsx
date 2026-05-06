@@ -71,7 +71,7 @@ export default function Hero() {
             transition={{ duration: 0.6 }}
           >
             <FaTerminal size={11} color="var(--accent-cyan)" />
-            <span>Available for Internships & Collab</span>
+            <span>Open to SDE Roles & Open Source</span>
           </motion.div>
 
           <motion.h1
