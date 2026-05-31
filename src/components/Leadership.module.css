@@ -1,4 +1,4 @@
-.leadership { overflow: hidden; }
+.leadership { position: relative; }
 
 .grid {
   display: grid;

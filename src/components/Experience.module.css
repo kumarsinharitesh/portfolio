@@ -1,4 +1,4 @@
-.exp { overflow: hidden; }
+.exp { position: relative; }
 .orb { width: 350px; height: 350px; bottom: 0; left: -80px; }
 
 .timeline {

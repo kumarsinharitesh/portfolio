@@ -10,6 +10,25 @@
   overflow: hidden;
 }
 
+/* Neural network canvas background */
+.unicornBg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  /* allow mouse events to reach the canvas */
+  pointer-events: auto;
+}
+
+/* Very subtle edge vignette — keep network visible */
+.unicornBg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, transparent 50%, rgba(1, 10, 15, 0.45) 100%);
+  pointer-events: none;
+}
+
 /* Background grid noise for effect */
 .overlay::before {
   content: '';
@@ -19,19 +38,23 @@
     linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
   background-size: 30px 30px;
-  opacity: 0.2;
-  z-index: -1;
+  opacity: 0.08;
+  z-index: 1;
+  pointer-events: none;
 }
 
 .terminal {
   width: 100%;
   max-width: 650px;
-  background: rgba(10, 15, 30, 0.9);
+  background: rgba(10, 15, 30, 0.88);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(6, 182, 212, 0.2);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
   overflow: hidden;
+  position: relative;
+  z-index: 2;
 }
 
 .header {

@@ -1,4 +1,4 @@
-.projects { overflow: hidden; }
+.projects { position: relative; }
 
 /* ─── Carousel container ─── */
 .carousel {

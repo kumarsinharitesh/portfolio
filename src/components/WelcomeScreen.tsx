@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { FaTerminal } from 'react-icons/fa'
 import Link from 'next/link'
+import NeuralBackground from './NeuralBackground'
 import styles from './WelcomeScreen.module.css'
 
 const commands = [
@@ -42,6 +43,11 @@ export default function WelcomeScreen() {
       exit={{ opacity: 0, y: '-100%' }}
       transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1] }}
     >
+      {/* Custom neural-network WebGL-style canvas background */}
+      <div className={styles.unicornBg}>
+        <NeuralBackground />
+      </div>
+
       <div className={styles.terminal}>
         <div className={styles.header}>
           <div className={styles.dots}>

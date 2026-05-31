@@ -1,8 +1,6 @@
-/* ─── Wrapper ─── */
 .footer {
   position: relative;
   background: var(--bg-secondary);
-  overflow: hidden;
   padding: 0;
 }
 
