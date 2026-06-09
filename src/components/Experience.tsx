@@ -37,6 +37,18 @@ const experiences = [
       'Implemented front-end features using HTML, CSS, and JavaScript, improving UI responsiveness across the platform',
     ],
   },
+
+  {
+    role: 'Software Development Engineer Intern',
+    company: 'Nami Groups',
+    period: 'Mar 2026 – May 2026',
+    type: 'Startup',
+    color: '#ad07ceff',
+    points: [
+      'Managed Mongodb database schemas, wrote optimized queries and executed data migrations and Tested RestAPI using Postman',
+      'Implemented front-end with middleware features using typescript,Nextjs, improving UI responsiveness across the platform',
+    ],
+  },
 ]
 
 export default function Experience() {

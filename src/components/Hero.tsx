@@ -93,7 +93,7 @@ export default function Hero() {
           >
             <HiOutlineCode className={styles.codeIcon} />
             <span className={styles.role} style={{ fontSize: '1.05rem', opacity: 0.9 }}>
-              Tech Enthusiast | Aspiring Full Stack Engineer | Continuous Learning | AI/ML Enthusiast
+              Tech Enthusiast |ET AI Hackathon Sem-Finalist | Aspiring Full Stack Engineer | Continuous Learning | AI/ML Enthusiast
             </span>
           </motion.div>
 
