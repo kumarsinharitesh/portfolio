@@ -35,6 +35,9 @@ const certs = [
   { name: 'Oracle Cloud Infrastructure 2025', sub: 'AI Foundations Associate', color: '#f59e0b', icon: '☁️' },
   { name: 'HTML5, CSS3 & JavaScript', sub: 'Infosys Springboard', color: '#06b6d4', icon: '🌐' },
   { name: 'Python (Basic)', sub: 'HackerRank', color: '#10b981', icon: '🐍' },
+  { name: 'Natural Language Processing', sub: 'NPTEL — IIT Certification', color: '#8b5cf6', icon: '🧠' },
+  { name: 'ET AI Hackathon — Semi-Finalist', sub: 'Economic Times AI Challenge', color: '#f43f5e', icon: '🏆' },
+  { name: 'NSS Volunteering', sub: 'National Service Scheme', color: '#10b981', icon: '🤝' },
 ]
 
 const extras = ['Photography', 'Video Editing', 'UI/UX Design']
