@@ -5,7 +5,6 @@ import { FaUniversity, FaTrophy, FaBriefcase, FaCode, FaRocket, FaGithub } from 
 import styles from './About.module.css'
 
 const stats = [
-  { icon: <FaGithub />, value: '10+', label: 'Open Source contributer', color: '#f59e0b' },
   { icon: <FaBriefcase />, value: '4', label: 'Internships', color: 'var(--accent-cyan)' },
   { icon: <FaCode />, value: '5+', label: 'Key Projects', color: 'var(--accent-violet)' },
   { icon: <FaRocket />, value: '2', label: 'Leadership Roles', color: 'var(--accent-emerald)' },
