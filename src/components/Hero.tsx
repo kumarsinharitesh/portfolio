@@ -53,7 +53,7 @@ function resetMagnet(event: React.PointerEvent<HTMLAnchorElement>) {
 export default function Hero() {
   const scrollTo = (selector: string) => document.querySelector(selector)?.scrollIntoView({ behavior: 'smooth' })
   const revealColour = (event: React.PointerEvent<HTMLDivElement>) => {
-    if (event.pointerType !== 'mouse' || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
+    if ((event.pointerType !== 'mouse' && event.pointerType !== 'touch') || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
     const bounds = event.currentTarget.getBoundingClientRect()
     event.currentTarget.style.setProperty('--spot-x', `${((event.clientX - bounds.left) / bounds.width) * 100}%`)
     event.currentTarget.style.setProperty('--spot-y', `${((event.clientY - bounds.top) / bounds.height) * 100}%`)
@@ -79,7 +79,7 @@ export default function Hero() {
           <motion.h1 className={`${styles.title} hero-name`} aria-label="Ritesh Kumar Sinha" initial={{ opacity: 0, scale: 0.985 }} animate={{ opacity: 1, scale: 1 }} transition={{ ...timing, duration: 0.8, delay: 0.12 }}>
             <span className={`${styles.outline} hero-name-outline`}>RITESH</span><span className={styles.solid}>KUMAR</span><span className={`${styles.outline} hero-name-outline`}>SINHA</span>
           </motion.h1>
-          <motion.div className={`${styles.portrait} hero-portrait`} initial={{ opacity: 0, y: 32, scale: 0.985 }} animate={{ opacity: 1, y: 0, scale: 1 }} transition={{ ...timing, duration: 0.9, delay: 0.32 }} onPointerMove={revealColour} onPointerLeave={hideColour}>
+          <motion.div className={`${styles.portrait} hero-portrait`} initial={{ opacity: 0, y: 32, scale: 0.985 }} animate={{ opacity: 1, y: 0, scale: 1 }} transition={{ ...timing, duration: 0.9, delay: 0.32 }} onPointerDown={revealColour} onPointerMove={revealColour} onPointerLeave={hideColour} onPointerUp={hideColour}>
             <Image className={styles.portraitBase} src="/ritesh-portrait.png" alt="Ritesh Kumar Sinha" fill priority sizes="(max-width: 760px) 92vw, (max-width: 1100px) 40vw, 540px" />
             <div className={styles.portraitColourLayer} aria-hidden="true"><Image className={styles.portraitColour} src="/ritesh-portrait.png" alt="" fill sizes="(max-width: 760px) 92vw, (max-width: 1100px) 40vw, 540px" /></div>
           </motion.div>

@@ -14,6 +14,7 @@ export default function IntroExperience() {
   const scene = useRef<HTMLDivElement>(null)
   const orbitShift = useRef(0)
   const orbitAngle = useRef(0)
+  const touchY = useRef<number | null>(null)
   const settleTimer = useRef<number | null>(null)
 
   useEffect(() => {
@@ -48,7 +49,17 @@ export default function IntroExperience() {
     }, 380)
   }
 
-  return <main ref={scene} className={`${styles.scene} intro-scene ${ready ? 'intro-ready' : ''} ${leaving ? styles.leaving : ''}`} onPointerMove={parallax} onWheel={rollOrbit}>
+  const touchStart = (event: React.TouchEvent<HTMLDivElement>) => { touchY.current = event.touches[0]?.clientY ?? null }
+  const touchMove = (event: React.TouchEvent<HTMLDivElement>) => {
+    const y = event.touches[0]?.clientY
+    if (touchY.current === null || y === undefined) return
+    const delta = touchY.current - y
+    touchY.current = y
+    orbitAngle.current += delta * .8
+    scene.current?.style.setProperty('--orbit-angle', `${orbitAngle.current}deg`)
+  }
+
+  return <main ref={scene} className={`${styles.scene} intro-scene ${ready ? 'intro-ready' : ''} ${leaving ? styles.leaving : ''}`} onPointerMove={parallax} onWheel={rollOrbit} onTouchStart={touchStart} onTouchMove={touchMove}>
     <div className={styles.stars} aria-hidden="true" />
     <div className={styles.grain} aria-hidden="true" />
     <div className={`${styles.orbit} intro-orbit`} aria-hidden="true"><span className="orbit-probe" /></div>

@@ -39,8 +39,8 @@ export default function Projects() {
           <h2 className="section-title">Things I&apos;ve<br />built.</h2>
           <p className="section-subtitle">A selection of AI experiments, developer tools, and full-stack applications.</p>
         </motion.div>
-        <div className={styles.reel} aria-label="Featured project slideshow">
-          <a className={styles.reelVisual} href={currentSlide.live || currentSlide.github} target="_blank" rel="noreferrer" aria-label={`Open ${currentSlide.title}`}>
+        <div className={`${styles.reel} project-reel`} aria-label="Featured project slideshow">
+          <a className={`${styles.reelVisual} project-reel-visual`} href={currentSlide.live || currentSlide.github} target="_blank" rel="noreferrer" aria-label={`Open ${currentSlide.title}`}>
             <Image key={currentSlide.image} src={currentSlide.image} alt={`${currentSlide.title} preview`} fill sizes="(max-width: 720px) 100vw, 70vw" />
             <span className={styles.reelGrid} aria-hidden="true" />
           </a>
@@ -48,13 +48,13 @@ export default function Projects() {
             <p>Featured project / {String(activeSlide + 1).padStart(2, '0')}</p>
             <h3>{currentSlide.title}</h3>
             <span>{currentSlide.description}</span>
-            <div className={styles.reelControls}>{reel.map((project, index) => <button key={project.title} onClick={() => setActiveSlide(index)} aria-label={`Show ${project.title}`} aria-current={index === activeSlide} />)}</div>
+            <div className={`${styles.reelControls} project-reel-controls`}>{reel.map((project, index) => <button key={project.title} onClick={() => setActiveSlide(index)} aria-label={`Show ${project.title}`} aria-current={index === activeSlide} />)}</div>
           </div>
         </div>
         <div className={styles.grid}>
           {projects.map((project, index) => (
             <motion.article key={project.title} className={`${styles.card} project-card ${index === 0 ? styles.featured : ''}`} initial={{ opacity: 0, y: 28 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.55, delay: (index % 2) * 0.07 }}>
-              <a className={styles.preview} href={project.live || project.github} target="_blank" rel="noreferrer" aria-label={`Open ${project.title}`}>
+              <a className={`${styles.preview} project-preview ${index === 0 ? 'devsync-preview' : ''}`} href={project.live || project.github} target="_blank" rel="noreferrer" aria-label={`Open ${project.title}`}>
                 <Image src={project.image} alt={`${project.title} project preview`} fill sizes="(max-width: 720px) 100vw, 50vw" />
                 <span className={styles.number}>{String(index + 1).padStart(2, '0')}</span>
                 <span className={styles.codeMark} aria-hidden="true">&lt;/&gt;</span>
